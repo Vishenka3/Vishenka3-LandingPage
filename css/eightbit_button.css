@@ -24,12 +24,12 @@
   .eightbit-btn:before {
     top: -4px;
     left: 0;
-    border-top: 4px black solid;
-    border-bottom: 4px black solid; }
+    border-top: 4px #ffffff solid;
+    border-bottom: 4px #ffffff solid; }
   .eightbit-btn:after {
     left: -4px;
     top: 0;
-    border-left: 4px black solid;
-    border-right: 4px black solid; }
+    border-left: 4px #ffffff solid;
+    border-right: 4px #ffffff solid; }
 
 /*# sourceMappingURL=eightbit_button.css.map */

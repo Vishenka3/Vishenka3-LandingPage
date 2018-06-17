@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'PrssStart';
+  src: url("../assets/fonts/PressStart2P-Regular.ttf");
+  font-weight: 700;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  body{
+    font-family: PrssStart, serif;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: black;
+    color: white;
+  }
+
+  a{
+    outline: none;
+  }
+
+  li{
+    list-style-type: none;
+  }
+
+  em{
+    color: #9f00ff;
+  }
+
+  h2, h3{
+    color: #9f00ff;
+  }
+
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  *{font-weight: bold;}
+  background-color: #9f00ff;
+
+  h1::selection {
+    color: #ffffff;
+    background: #000000;
+  }
+
+  .page-name {
+    margin-left: 20px;
+    font-size: 13pt;
+  }
+}
+
+main{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  line-height: 1.2rem;
+  h2{
+    font-size: 1.5rem;
+    margin-top: 5%;
+  }
+  .game-info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    img{
+      width: 50%;
+      height: 50%;
+      margin-right: 70px;
+      border: 4px solid white;
+      &:hover{
+        border: 4px solid #9f00ff;
+        transform: scale(1.2);
+      }
+    }
+    article{
+      display: flex;
+      flex-direction: column;
+      h3{
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 5%;
+      }
+    }
+  }
+  .second-info{
+    flex-direction: row-reverse;
+    img{
+      margin-right: 0;
+      margin-left: 70px;
+    }
+  }
+  .our-team{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    h4{
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 10% 0;
+      color: #9f00ff;
+    }
+    .portraits{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      div{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+      }
+      .port1{
+        background-image: url("../assets/port1.jpg");
+        background-size: contain;
+      }
+      .port2{
+        background-image: url("../assets/port2.jpg");
+        background-size: contain;
+      }
+      .port3{
+        background-image: url("../assets/port3.jpg");
+        background-size: contain;
+      }
+    }
+    .names{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 5% 0;
+    }
+  }
+  .button-container {
+    margin: 5% auto;
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  table{
+    margin: 3% auto;
+    .margin{
+      font-size: 1.3rem;
+    }
+  }
+}
