@@ -74,9 +74,53 @@ main {
       margin-right: 0;
       margin-left: 70px; }
   main .our-team {
+    width: 100%;
     display: flex;
     flex-direction: column; }
-    main .our-team .portraits .port1 {
-      background-image: url(""); }
+    main .our-team h4 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 10% 0;
+      color: #9f00ff; }
+    main .our-team .portraits {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      main .our-team .portraits div {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%; }
+      main .our-team .portraits .port1 {
+        background-image: url("../assets/port1.jpg"); }
+      main .our-team .portraits .port2 {
+        background-image: url("../assets/port2.jpg"); }
+      main .our-team .portraits .port3 {
+        background-image: url("../assets/port3.jpg"); }
+    main .our-team .names {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 5% 0; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center; }
+  footer table {
+    margin: 3% auto; }
+    footer table .margin {
+      font-size: 1.3rem; }
+
+.button-container {
+  margin: 0 auto;
+  width: 100px;
+  text-align: center;
+  padding: 10px 0; }
 
 /*# sourceMappingURL=style.css.map */
